@@ -1,3 +1,9 @@
+"""
+At this stage, you will program the bot to count from 0 to any positive number users enter.
+"""
+# put your python code here
+
+
 print('Hello! My name is Aid.')
 print('I was created in 2020.')
 print('Please, remind me your name.')
@@ -8,10 +14,19 @@ print('What a great name you have, ' + name + '!')
 print('Let me guess your age.')
 print('Enter remainders of dividing your age by 3, 5 and 7.')
 
-# reading all remainders
-remainder3 = int(input())
-remainder5 = int(input())
-remainder7 = int(input())
-age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105
+rem3 = int(input())
+rem5 = int(input())
+rem7 = int(input())
+
+age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105
 
 print("Your age is " + str(age) + "; that's a good time to start programming!")
+print('Now I will prove to you that I can count to any number you want.')
+
+# read a number and count to it here
+i = 0
+num = int(input())
+while i <= num:
+    print(str(i) + "!")
+    i += 1
+print('Completed, have a nice day!')
